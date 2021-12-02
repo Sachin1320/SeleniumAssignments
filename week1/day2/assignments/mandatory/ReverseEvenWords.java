@@ -3,8 +3,31 @@ package week1.day2.assignments.mandatory;
 public class ReverseEvenWords {
 	
 	//Build a logic to reverse the even position words (output: I ma a erawtfos tester)
+	 public static void main(String[] args) {
+			String str = "I am a software tester";
+			String[] splitArr = str.split(" ");
+	                for (int i = 0; i < splitArr.length; i++) {
+			}
+		        for (int i = 0; i < splitArr.length; i++) {
+				    	if (i % 2 != 0) {
+				    		char arr1[] = splitArr[i].toCharArray();
+							for (int j = (arr1.length) - 1; j >= 0; j--) {
+								System.out.print(arr1[j]);
+							}
+							System.out.print(" ");	
+					}
 
-	
+					else {
+						System.out.print(splitArr[i]);
+						System.out.print(" ");
+					}
+
+				}
+		}
+	}
+
+  
+
 
 			/* Pseudo Code:
 			 
